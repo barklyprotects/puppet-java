@@ -4,13 +4,13 @@
 #
 #    include java
 class java (
-  $update_version = '71',
-  $base_download_url = 'https://s3.amazonaws.com/boxen-downloads/java'
+  $update_version = '45',
+  $base_download_url = 'https://s3.amazonaws.com/cylent-boxen/java'
 ) {
   include boxen::config
 
-  $jre_url = "${base_download_url}/jre-7u${update_version}-macosx-x64.dmg"
-  $jdk_url = "${base_download_url}/jdk-7u${update_version}-macosx-x64.dmg"
+  $jre_url = "${base_download_url}/jre-8u${update_version}-macosx-x64.dmg"
+  $jdk_url = "${base_download_url}/jdk-8u${update_version}-macosx-x64.dmg"
   $wrapper = "${boxen::config::bindir}/java"
   $jdk_dir = "/Library/Java/JavaVirtualMachines/jdk1.7.0_${update_version}.jdk"
   $sec_dir = "${jdk_dir}/Contents/Home/jre/lib/security"
