@@ -5,7 +5,7 @@
 #    include java
 class java (
   $update_version = '45',
-  $update_major_version = '7',
+  $update_major_version = '8',
   $base_download_url = 'https://s3.amazonaws.com/cylent-boxen/java'
 ) {
   include boxen::config
